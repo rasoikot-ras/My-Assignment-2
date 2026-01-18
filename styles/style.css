@@ -159,6 +159,55 @@
 
 .about-section{
     text-align: center;
-    
-    
+    padding: 3.125rem 12.5rem;
 }
+
+.about-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.about-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    color: #FFFFFF;
+    line-height: 1.25rem;
+    font-size: 1rem;
+}
+
+.about-content p {
+    padding-bottom: 5rem;
+}
+
+        /* stats section */
+.stats-section {
+    padding-bottom: 7.5rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+    border-top: 0.5px solid gray;
+}
+
+.stat-number {
+    font-size: 3rem;
+    color: #00FF88;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+
