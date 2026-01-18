@@ -210,4 +210,48 @@
     font-weight: 600;
 }
 
+        /* features section */
+.features { 
+    padding: 7.5rem 12.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    background-color: #230E3D;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 23.75rem);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-large {
+    grid-column: span 1;
+    grid-row: span 2;
+
+}
+
+.card-col {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 1.5625rem;
+}
+
+.card .icon {
+    width: 40px;
+    margin-bottom: 1rem;
+}
 
