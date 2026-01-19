@@ -58,6 +58,12 @@
     color: #FFFFFF;
     cursor: pointer;
 }
+.btn-sub:hover {
+    background: #00FF88;
+    color: #9100F8;
+}
+
+
     /* hero section */
 .hero {
     width: 100%;
@@ -90,7 +96,7 @@
   transform: translate(-50%, -50%);
   width: 7.3125rem;
   height: auto;
-  z-index: 2;  
+  z-index: 2;
 }
 
 .bdg-new {
@@ -141,6 +147,15 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    transition: transform 2s linear 0.1s, width 2s ease-in-out 0.1s;
+}
+
+.btn-spotify:hover {
+    color: #00FF88;
+    background: transparent;
+    border: 1px solid #00FF88;
+    height: -9rem;
+    transform: rotate(180deg) scale(-1.5);
 }
 
 .btn-msg {
@@ -156,6 +171,15 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    transition: width 2s linear 0.1s, transform 1s linear 0.1s;
+}
+
+.btn-msg:hover {
+    background: palevioletred;
+    color: #FFFFFF;
+    border: none;
+    width: 9rem;
+    transform: rotate(180deg);
 }
 
 /* about section */
@@ -209,7 +233,6 @@
 
 .stat-label {
     font-size: 1rem;
-    letter-spacing: 2px;
     color: #FFFFFF;
     font-weight: 600;
 }
@@ -266,7 +289,7 @@
 }
 
 .card .icon {
-    width: 40px;
+    width: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -295,6 +318,7 @@
     font-weight: bold;
     margin-bottom: 2.5rem;
     text-align: center;
+    width: 100%;
 }
 
 .episode-container{
@@ -305,11 +329,23 @@
 }
 
 .ep-card{
+    width: 23.75rem;
     background: #250D44;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 2.5rem;
     border-radius: 1.5625rem;
-    height: 30rem;
+    overflow: hidden;
+}
+
+.video-cont {
+    width: 100%;
+    height: 13.375rem;
+    box-sizing: border-box;
+}
+
+.video-cont iframe {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 1.25rem; */
 }
 
 .ep-card h3 {
@@ -318,6 +354,7 @@
     font-weight: bold;
     margin-bottom: 0.75rem;
     width: 20.75rem;
+    padding: 0 1.5rem;
 }
 
 .ep-card p {
@@ -325,6 +362,7 @@
     line-height: 1.5rem;
     margin-bottom: 0.75rem;
     width: 20.75rem;
+    padding: 0 1.5rem;
 }
 
 .watch {
@@ -434,6 +472,13 @@
     line-height: 1.5rem;
 }
 
+a:hover{
+    background-color: #a19b5a;
+    color: black;
+    border-radius: 4rem;
+}
+
+    /* responsive section */
 @media screen and (max-width:576px) {
     /* Navbar */
     .navbar {
@@ -521,6 +566,9 @@
     .episode {
         padding: 2.5rem 1.25rem;
     }
+    .episode h2 {
+        font-size: 2rem;
+    }
     .episode-container {
         flex-direction: column;
     }
@@ -556,7 +604,6 @@
         font-size: 2rem;
     }
     .footer-icon {
-        width: 15.94;
         display: grid;
         gap: 0.5rem;
         grid-template-columns: repeat(2, 9.5rem);
@@ -600,7 +647,9 @@
     .card-n {
         grid-column: span 2;
     }
-
+    .episode h2 {
+        font-size: 2rem;
+    }
     .episode-container {
         flex-wrap: wrap;
         justify-content: center;
@@ -611,15 +660,11 @@
         height: auto;
     }
 
+    iframe{
+        width: auto;
+    }
+
     .host {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    max-width: auto;
-    background: #250D44;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 3rem 2.5rem;
-    border-radius: 1.5625rem;
+        width: 100%;
     }
 }
