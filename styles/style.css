@@ -181,6 +181,7 @@
 
 .about-content p {
     padding-bottom: 5rem;
+    text-align: center;
 }
 
         /* stats section */
@@ -431,4 +432,194 @@
     font-size: 1rem;
     color: #FAFAFA;
     line-height: 1.5rem;
+}
+
+@media screen and (max-width:576px) {
+    /* Navbar */
+    .navbar {
+        width: 95%;
+        padding: 1.25rem;
+        gap: 1rem;
+        background: url('../assets/hamburger-menu.png');
+        background-repeat: no-repeat;
+        background-position: right; 
+    }
+    .nav-links {
+        display: none;
+    }
+    .btn-sub {
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 29.125rem;
+        padding-bottom: 2.5rem;
+        background-size: cover;
+    }
+    .hero-image-container {
+        width: 12.5rem;
+        height: 12.5rem;
+        margin-top: 2.5rem;
+    }
+    .mic-image {
+        width: 5rem;
+    }
+    .hero h1 {
+        font-size: 2.25rem;
+        padding: 0 1rem;
+    }
+    .hero p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .hero-btns {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .btn-spotify, .btn-msg {
+        max-width: 100%;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 2.5rem 1.25rem;
+    }
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    /* Stats Section */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 90%;
+    }
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 2.5rem 1.25rem;
+    }
+    .features h2 {
+        font-size: 2rem;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .card-large, .card-col {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /* Episodes Section */
+    .episode {
+        padding: 2.5rem 1.25rem;
+    }
+    .episode-container {
+        flex-direction: column;
+    }
+    .ep-card {
+        width: 100%;
+        height: auto;
+    }
+    .ep-card h3, .ep-card p {
+        width: 100%;
+    }
+
+    /* Host Section */
+    .host {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .host-container {
+        text-align: center;
+    }
+    .host-icon {
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-box {
+        height: auto;
+        padding: 2.5rem 1.25rem;
+        background-size: cover;
+    }
+    .footer-box h1 {
+        font-size: 2rem;
+    }
+    .footer-icon {
+        width: 15.94;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(2, 9.5rem);
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar {
+        width: 90%;
+    }
+
+    .hero-image-container {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .features {
+        padding: 5rem 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .card-large {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .card-col {
+        grid-column: span 2;
+    }
+    .card-n {
+        grid-column: span 2;
+    }
+
+    .episode-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ep-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: auto;
+    background: #250D44;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem 2.5rem;
+    border-radius: 1.5625rem;
+    }
 }
