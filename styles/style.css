@@ -31,7 +31,10 @@
 }
 
 .logo span{
-    color: #d01da9;
+    background: linear-gradient(to left, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    display: inline-block;
+    color: transparent;
 }
 
 .nav-links {
@@ -365,3 +368,67 @@
     margin-bottom: 1rem;
 }
 
+.host-icon {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.host-icon a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    padding: 0.656rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box {
+    width: 100%;
+    text-align: center;
+    background: url("../assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7.5rem 0;
+}
+
+.footer-box h1 {
+    font-size: 3.75rem;
+    font-weight: bolder;
+}
+
+.footer-h {
+    background: linear-gradient(to left, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    display: inline-block;
+    color: transparent;
+    
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0;
+}
+
+.footer-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-box p{
+    font-size: 1rem;
+    color: #FAFAFA;
+    line-height: 1.5rem;
+}
