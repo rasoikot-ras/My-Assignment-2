@@ -687,5 +687,11 @@ a:hover{
 
     .host {
         width: 100%;
+        gap: 1.5rem;
+        max-width: 85rem;
+        background: #250D44;
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 }
